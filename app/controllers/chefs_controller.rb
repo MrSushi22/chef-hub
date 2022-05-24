@@ -2,7 +2,7 @@ class ChefsController < ApplicationController
   def index
     @chefs = Chef.all
   end
-
+  
   def new
     @chef = Chef.new
   end
@@ -10,5 +10,6 @@ class ChefsController < ApplicationController
   def create
     @chef = Chef.new
     @chef.save
+  def show
   end
 end
