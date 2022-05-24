@@ -9,12 +9,16 @@
 User.delete_all
 Chef.delete_all
 
-25.times do
-  User.create(first_name: Faker::Name::female_first_name, last_name: Faker::Name::last_name, password: 'secret', email: Faker::Internet.email, chef: true)
+10.times do
+  user_chef = User.create(first_name: Faker::Name::female_first_name, last_name: Faker::Name::last_name, password: 'secret', email: Faker::Internet.email, chef_boolean: true)
 
   chef = Chef.new(nickname: Faker::Superhero.name, cuisine: Faker::Food.ethnic_category, description: Faker::GreekPhilosophers.quote, location: Faker::Nation.flag, price: Faker::Number.number(digits: 3))
-  chef.user = User.all.sample
+  chef.user = user_chef
   chef.save
+end
+
+10.times do
+  user = User.create(first_name: Faker::Name::female_first_name, last_name: Faker::Name::last_name, password: 'secret', email: Faker::Internet.email, chef_boolean: false)
 end
 
 puts "#{User.count} users created successfully"

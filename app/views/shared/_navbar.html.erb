@@ -16,7 +16,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active">
-            <%= link_to "Became a chef", "#", class: "nav-link" %>
+            <%= link_to "Become a chef", new_chef_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Contact us", "#", class: "nav-link" %>
@@ -34,7 +34,7 @@
             <%= link_to "Contact us", "#", class: "nav-link" %>
           </li>
         <li class="nav-item active">
-            <%= link_to "Became a chef", "#", class: "nav-link" %>
+            <%= link_to "Become a chef", "#", class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Login", new_user_session_path, class: "nav-link" %>
