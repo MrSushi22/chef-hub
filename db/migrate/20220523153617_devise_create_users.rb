@@ -34,7 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.1]
 
       t.string :first_name
       t.string :last_name
-      t.boolean :chef
+      t.boolean :chef_boolean
 
       t.timestamps null: false
     end

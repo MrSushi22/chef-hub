@@ -1,0 +1,11 @@
+<h1>Hello New,Chef</h1>
+
+
+<%= simple_form_for(@chef) do |f| %>
+  <%= f.input :nickname %>
+  <%= f.input :cuisine %>
+  <%= f.input :description %>
+  <%= f.input :location %>
+  <%= f.input :price %>
+  <%= f.submit %>
+<% end %>
