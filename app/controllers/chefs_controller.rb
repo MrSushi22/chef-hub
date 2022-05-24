@@ -20,4 +20,8 @@ class ChefsController < ApplicationController
 
   def update
   end
+
+  def destroy
+  end
+
 end
