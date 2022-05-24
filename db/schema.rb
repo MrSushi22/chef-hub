@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2022_05_23_160410) do
   end
 
   create_table "chefs", force: :cascade do |t|
+    t.string "nickname"
     t.string "cuisine"
     t.text "description"
     t.string "location"
