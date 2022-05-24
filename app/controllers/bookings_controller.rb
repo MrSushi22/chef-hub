@@ -5,4 +5,8 @@ class BookingsController < ApplicationController
     @booking.save
   end
 
+  def destroy
+  end
+
+
 end
