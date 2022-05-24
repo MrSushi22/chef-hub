@@ -5,3 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.delete_all
+Chef.delete_all
+
+25.times do
+  User.create(first_name: Faker::Name::female_first_name, last_name: Faker::Name::last_name, password: 'secret', email: Faker::Internet.email, chef: true)
+
+  chef = Chef.new(nickname: Faker::Superhero.name, cuisine: Faker::Food.ethnic_category, description: Faker::GreekPhilosophers.quote, location: Faker::Nation.flag, price: Faker::Number.number(digits: 3))
+  chef.user = User.all.sample
+  chef.save
+end
+
+puts "#{User.count} users created successfully"
+puts "#{Chef.count} chefs created successfully"
