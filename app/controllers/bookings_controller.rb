@@ -8,5 +8,7 @@ class BookingsController < ApplicationController
   def destroy
   end
 
-
+  def set_booking_status
+    #return a boolean
+  end
 end
