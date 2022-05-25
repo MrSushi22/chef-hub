@@ -1,38 +1,18 @@
-<h1>Chefs Results </h1>
 <% @chefs.each do |chef| %>
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-6">
-      <div class="card-trip">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-         <div class="card-trip-infos">
-          <div>
-             <h3><%= chef.nickname %></h3>
-             <p><%= chef.description %></p>
-
-           </div>
-            <h2 class="card-trip-pricing">£99.99</h2>
-         <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+<div class="page" style="min-height:75vh;">
+  <div class= "container">
+    <div class= "container">
+      <div class= "row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="card-link" href="/chefs/id">
+            <div class="card">
+              <h3><%= chef.nickname %></h3>
+              <p><%= chef.description %></p>
+              <% end %>
+            </div>
+          </a>
         </div>
       </div>
-
-      </div>
     </div>
+  </div>
 </div>
-<% end %>
-
-
-
-<%# <div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-    Breakfast
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
-    Lunch
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
-    Dinner
-  </div>
-</div> %>
