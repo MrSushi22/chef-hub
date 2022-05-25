@@ -4,15 +4,21 @@
     <div class= "container">
       <div class= "row">
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="card-link" href="/chefs/id">
+          <a class="card-link" href="/chefs/:chef_id">
             <div class="card">
-              <h3><%= chef.nickname %></h3>
+              <h2><%= chef.nickname %></h2>
               <p><%= chef.description %></p>
-              <% end %>
+              <div class="card-infos">
+                <div>
+                  <h2 class="card-pricing">120£</h2>
+                  <img height="40" width="40" class="card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
+                </div>
+              </div>
             </div>
-          </a>
+           </a>
         </div>
       </div>
     </div>
   </div>
 </div>
+<% end %>
