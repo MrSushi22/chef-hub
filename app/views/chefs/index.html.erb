@@ -1,4 +1,5 @@
 <h1>Search chefs results </h1>
+<% @chefs.each do |chef| %>
 <div class="container">
   <div class="row justify-content-center">
     <div class="col-6">
@@ -6,10 +7,9 @@
         <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
          <div class="card-trip-infos">
           <div>
-            <% @chefs.each do |chef| %>
              <h3><%= chef.nickname %></h3>
              <p><%= chef.description %></p>
-            <% end %>
+
            </div>
             <h2 class="card-trip-pricing">£99.99</h2>
          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
@@ -19,3 +19,4 @@
       </div>
     </div>
 </div>
+<% end %>
