@@ -3,68 +3,43 @@
   background-color: $light-gray;};
 
 .find {
-  position: absolute;
-  width: 1082px;
-  height: 300px;
-  left: 167px;
-  top: 377px;
+  margin-top: 108px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 200px;
-  line-height: 300px;
+  font-size: 146px;
+  line-height: 191px;
   /* identical to box height */
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #333333;
   }
 
   .near {
-  position: absolute;
-  width: 1000px;
-  height: 318px;
-  left: 286px;
-  top: 597px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  font-size: 212px;
-  line-height: 318px;
+  font-size: 146px;
+  line-height: 1px;
   /* identical to box height */
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #333333;
+  text-indent: 5%;
+  margin-bottom: 100px;
   }
 
 .lower-line {
-  position: absolute;
-  width: 1978px;
-  height: 0px;
-  left: -44px;
-  top: 246px;
-
   border: 1px solid #FFFFFF;
   transform: rotate(0.06deg);
   }
 
 .upper-line {
-  position: absolute;
-  width: 1978px;
-  height: 0px;
-  left: -58px;
-  top: 37px;
-
   border: 1px solid #FFFFFF;
   transform: rotate(0.06deg);
   }
 
 .network {
-position: absolute;
-width: 255px;
-height: 129px;
-left: 323px;
-top: 1225px;
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
@@ -75,12 +50,6 @@ text-transform: uppercase;
   }
 
 .customers {
-  position: absolute;
-  width: 537px;
-  height: 155px;
-  left: 1064px;
-  top: 1225px;
-
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -92,11 +61,6 @@ text-transform: uppercase;
   }
 
   .bookings {
-position: absolute;
-width: 537px;
-height: 155px;
-left: 1685px;
-top: 1227px;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
@@ -107,12 +71,6 @@ color: #000000;
   }
 
 .number1 {
-position: absolute;
-width: 235px;
-height: 180px;
-left: 71px;
-top: 1187px;
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 275;
@@ -127,12 +85,6 @@ color: #F58343;
 }
 
 .number2 {
-position: absolute;
-width: 313px;
-height: 180px;
-left: 723px;
-top: 1185px;
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 275;
@@ -147,12 +99,6 @@ color: #F58343;
 }
 
 .number3 {
-position: absolute;
-width: 208px;
-height: 180px;
-left: 1452px;
-top: 1187px;
-
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 275;
