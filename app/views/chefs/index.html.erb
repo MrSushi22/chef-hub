@@ -1,10 +1,9 @@
 <% @chefs.each do |chef| %>
-<div class="page" style="min-height:75vh;">
-  <div class= "container">
+  <div class="page" style="min-height:75vh;">
     <div class= "container">
       <div class= "row">
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="card-link" href="/chefs/:chef_id">
+          <%= link_to chef_path(chef), class: "card" do %>
             <div class="card">
               <h2><%= chef.nickname %></h2>
               <p><%= chef.description %></p>
@@ -15,10 +14,9 @@
                 </div>
               </div>
             </div>
-           </a>
+          <% end %>
         </div>
       </div>
     </div>
   </div>
-</div>
 <% end %>
