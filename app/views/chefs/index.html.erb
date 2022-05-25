@@ -1,22 +1,14 @@
-<% @chefs.each do |chef| %>
-  <div class="page" style="min-height:75vh;">
-    <div class= "container">
-      <div class= "row">
-        <div class="col-12 col-md-6 col-lg-4">
-          <%= link_to chef_path(chef), class: "card" do %>
-            <div class="card">
-              <h2><%= chef.nickname %></h2>
-              <p><%= chef.description %></p>
-              <div class="card-infos">
-                <div>
-                  <h2 class="card-pricing">120£</h2>
-                  <img height="40" width="40" class="card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
-                </div>
-              </div>
-            </div>
-          <% end %>
-        </div>
-      </div>
+<div class= "container">
+  <% @chefs.each do |chef| %>
+    <div class="card">
+      <%= link_to chef_path(chef), class: "card" do %>
+      <h2><%= chef.nickname %></h2>
+      <p><%= chef.description %></p>
+    <div class="card-infos">
+      <h2 class="card-pricing">120£</h2>
+      <img height="40" width="40" class="card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
     </div>
+    <% end %>
   </div>
-<% end %>
+  <% end %>
+</div>
