@@ -1,6 +1,8 @@
 class BookingsController < ApplicationController
 
-
+  def index
+    @bookings = Booking.all
+  end
   def new
     @booking = Booking.new
     @chef = Chef.find(params[:chef_id])
@@ -11,13 +13,17 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     @booking.chef = Chef.find(params[:chef_id])
     if @booking.save
-      redirect_to chefs_path
+      redirect_to chef_bookings_path
     else
       render :new
     end
   end
 
   def destroy
+  end
+
+  def show
+    @chef = Chef.find(params[:chef_id])
   end
 
   private
