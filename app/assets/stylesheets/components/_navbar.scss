@@ -1,6 +1,13 @@
 .navbar-lewagon {
   justify-content: space-between;
   $light-gray: #F4F4F4;
+
+
+  input[type="text"]{
+    background:none;
+    border:none;
+    padding:0.2rem 0 0 0;
+  }
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -56,11 +63,6 @@ h6 {
   width:40%;
 }
 
-input[type="text"]{
-  background:none;
-  border:none;
-  padding:0.2rem 0 0 0;
-}
 
 input[type="text"]:focus{
   outline:none;
