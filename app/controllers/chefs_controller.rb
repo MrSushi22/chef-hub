@@ -13,6 +13,7 @@ class ChefsController < ApplicationController
   end
 
   def show
+    @chef = Chef.find(params[:id])
   end
 
   def edit
@@ -23,5 +24,7 @@ class ChefsController < ApplicationController
 
   def destroy
   end
+
+
 
 end

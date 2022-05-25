@@ -1,1 +1,6 @@
 <h1>Congratulations on your new booking, homeslice! </h1>
+<%= simple_form_for [ @chef, @booking ] do |f| %>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+  <%= f.submit "Submit booking", class: "btn btn-primary" %>
+<% end %>

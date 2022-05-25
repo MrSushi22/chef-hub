@@ -5,6 +5,11 @@ class BookingsController < ApplicationController
     @booking.save
   end
 
+  def new
+    @booking = Bookings.new
+    @chef =
+  end
+
   def destroy
   end
 
