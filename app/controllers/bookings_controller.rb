@@ -7,7 +7,7 @@ class BookingsController < ApplicationController
 
   def new
     @booking = Bookings.new
-    @chef =
+    @chef = Chef.find(params[:chef_id])
   end
 
   def destroy
