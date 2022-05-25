@@ -3,11 +3,10 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
 
-  resources :chefs
+  resources :chefs do
+    resources :bookings
+  end
 
   resources :users
-
-  resources :bookings
-
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
