@@ -4,7 +4,7 @@ class ChefsController < ApplicationController
       @chefs = Chef.where(cuisine: params[:query])
     else
       @chefs = Chef.all
-   end
+    end
   end
 
   def new
