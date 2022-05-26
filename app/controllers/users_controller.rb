@@ -6,6 +6,11 @@ class UsersController < ApplicationController
   end
 end
 
+def update
+  @user = User.find(params[:id])
+  @user.update_attribute(:photo, params[:user][:photo])
+end
+
 private
 
 def user_params
