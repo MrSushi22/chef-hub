@@ -2,6 +2,7 @@ class ChefsController < ApplicationController
   def index
     if params[:query].present?
       @chefs = Chef.where(cuisine: params[:query])
+      # @chefs.Chef.zwhere("nickname ILIKE ?", "#{params[:query]}")
     else
       @chefs = Chef.all
     end
@@ -28,7 +29,4 @@ class ChefsController < ApplicationController
 
   def destroy
   end
-
-
-
 end

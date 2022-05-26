@@ -3,7 +3,7 @@
   <%= text_field_tag :query,
     params[:query],
     class: "form-control",
-    placeholder: "Find a Chef"
+    placeholder: "Search a cuisine type"
   %>
   <%= submit_tag "Search", class: "btn btn-primary" %>
 <% end %>
@@ -11,6 +11,8 @@
     <div class="card">
       <%= link_to chef_path(chef), class: "card" do %>
       <h2><%= chef.nickname %></h2>
+      <p> <%= chef.cuisine %></p>
+      <p><%= chef.location %></p>
       <p><%= chef.description %></p>
     <div class="card-infos">
       <h2 class="card-pricing">120£</h2>
