@@ -1,4 +1,3 @@
-// Specific CSS for your home-page
 .homescreen {
   background-color: $light-gray;};
 
@@ -39,85 +38,50 @@
   transform: rotate(0.06deg);
   }
 
-.network {
+.homecard-container{
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin: auto 0;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: rgba($color: #f7f7f7, $alpha: 0.8);
+  margin-top: 40px;
+  border-radius: 10px;
+  }
+
+
+  .copy {
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 300;
-font-size: 35px;
-line-height: 52px;
+font-size: 25px;
+line-height: 35px;
 text-transform: uppercase;
-
-  }
-
-.customers {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 35px;
-  line-height: 52px;
-  text-transform: uppercase;
-
-  color: #000000;
-  }
-
-  .bookings {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 35px;
-line-height: 52px;
-text-transform: uppercase;
-color: #000000;
-  }
-
-.number1 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 89px;
-line-height: 180px;
-text-align: center;
-text-transform: uppercase;
-color: #F58343;
+flex: 12 1 auto;
+color: black;
+margin: 0;
 }
 
-.number2 {
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 100;
-font-size: 89px;
-line-height: 180px;
-text-align: center;
-text-transform: uppercase;
-
-color: #F58343;
-
-}
-
-.number3 {
+.numbers {
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 275;
-font-size: 89px;
+font-size: 90px;
 line-height: 180px;
-text-align: center;
+flex: 1 1 auto;
+padding: 10px;
 text-transform: uppercase;
- color: #F58343;
- }
-
-
-.homecard {
-  width: 200px;
-  border-radius: 3px;
-  box-shadow: transparent;
-  text-align: center;
-  padding: 20px;
-  border: transparent;
-
+color: #F58343;
+margin-bottom: 0;
 }
 
-.homecards {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+.wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	min-height: 100%;
+  border-radius: 3%;
+  align-items: center;
 }
