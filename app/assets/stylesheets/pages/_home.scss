@@ -63,7 +63,7 @@ text-transform: uppercase;
   .bookings {
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 300;
+font-weight: 100;
 font-size: 35px;
 line-height: 52px;
 text-transform: uppercase;
@@ -73,24 +73,20 @@ color: #000000;
 .number1 {
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 275;
-font-size: 120px;
+font-weight: 100;
+font-size: 89px;
 line-height: 180px;
-/* identical to box height */
 text-align: center;
 text-transform: uppercase;
-
 color: #F58343;
-
 }
 
 .number2 {
 font-family: 'Poppins';
 font-style: normal;
-font-weight: 275;
-font-size: 120px;
+font-weight: 100;
+font-size: 89px;
 line-height: 180px;
-/* identical to box height */
 text-align: center;
 text-transform: uppercase;
 
@@ -102,11 +98,26 @@ color: #F58343;
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 275;
-font-size: 120px;
+font-size: 89px;
 line-height: 180px;
-/* identical to box height */
 text-align: center;
 text-transform: uppercase;
+ color: #F58343;
+ }
 
-color: #F58343;
+
+.homecard {
+  width: 200px;
+  border-radius: 3px;
+  box-shadow: transparent;
+  text-align: center;
+  padding: 20px;
+  border: transparent;
+
+}
+
+.homecards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
