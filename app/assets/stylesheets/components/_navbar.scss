@@ -1,3 +1,10 @@
+.navbar > .container-fluid{
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
 .navbar-lewagon {
   justify-content: space-between;
   $light-gray: #F4F4F4;
@@ -56,8 +63,9 @@ h6 {
 }
 
 .bar div:hover{
-  background:rgb(236, 154, 59);
+  background:#f5b143;
 }
+
 
 .type, .date, .search{
   width:40%;

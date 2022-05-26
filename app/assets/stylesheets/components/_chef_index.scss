@@ -1,40 +1,40 @@
-.card {
-  display:inline-block;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+
+.chef-card {
+	border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 24px;
 }
 
-.card > img {
-  height: 100px;
+.chef-card > img {
+  height: 150px;
   width: 100%;
   object-fit: cover;
 }
 
-.card h2 {
+
+.chef-card h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
-.card p {
+.chef-card p {
   font-size: 12px;
   opacity: .7;
   margin: 0;
 }
 
 
-.card .card-infos {
-  padding: 16px;
+.chef-card .chef-card-infos {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   position: relative;
 }
 
-.card-infos .card-user {
+.chef-card-avatar {
   position: absolute;
   right: 16px;
-  top: -20px;
+  top: -75px;
   width: 40px;
 }
