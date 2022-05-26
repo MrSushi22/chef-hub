@@ -1,22 +1,17 @@
-
-
 .chef-card {
 	border-radius: 5px;
   background-color: rgb(255, 255, 255);
   margin-bottom: 24px;
 }
 
-.chef-card > img {
-  height: 150px;
-  width: 100%;
-  object-fit: cover;
-}
-
-
 .chef-card h2 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
+}
+
+.card-pricing{
+  text-align: right;
 }
 
 .chef-card p {
@@ -33,8 +28,14 @@
 }
 
 .chef-card-avatar {
-  position: absolute;
   right: 16px;
   top: -75px;
   width: 40px;
+  z-index: 1;
+}
+
+.chef-card h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
 }
