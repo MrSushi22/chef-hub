@@ -32,3 +32,10 @@ class ChefsController < ApplicationController
   def destroy
   end
 end
+
+
+private
+
+def chef_params
+  params.require(:chef).permit(:nickname, :location, :price, :description, :cuisine, :photo)
+end
