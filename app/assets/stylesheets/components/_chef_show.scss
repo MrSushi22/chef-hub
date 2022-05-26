@@ -1,20 +1,20 @@
-.banner {
+.banner_profile {
+  padding: 0px 0;
+  background-image: url("bannerprofile3.jpg");
+  height: 300px;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
 }
 
-.banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+.avatar-large {
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 320px;
+  left: 80px;
 }
 
-.banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+.banner-img {
+  width: auto;
+  height: auto;
 }

@@ -1,3 +1,35 @@
+
+<div class="banner_profile"></div>
+
+   <div class="container">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
+   </div>
+
+
+<div class="container" id="content-profile">
+    <div class="row">
+         <div class="col-12 col-lg-8">
+           <div>
+             <h1>Someone name here</h1>
+                <p>someone city</p>
+           </div>
+        </div>
+</div>
+      <div>
+        <p>someone description here</p>
+      </div>
+
+         <div class="col-12 col-lg-4">
+           <div>
+                <h5 class="mb-3">Book this chef</h5>
+                <h6 class="mb-3"><strong>Price 140.0 €/hour</strong></h6>
+           </div>
+        </div>
+
+
+<div class="btn btn-primary">
+  <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn" %>
+
 <div class="banner" >
     <div class="container">
         <div class="row justify-content-center">
