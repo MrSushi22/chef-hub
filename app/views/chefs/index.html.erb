@@ -7,21 +7,29 @@
           <%= submit_tag "Search", class: "btn btn-primary" %>
           <% end %>
 
-<div class= "chef-container">
+<div class= "container">
   <div class="row">
-    <% @chefs.each do |chef| %>
-      <div class="chef-card col-md-4"> <img src="https://www.w3schools.com/bootstrap/la.jpg" class="img-fluid">
-        <%= link_to chef_path(chef), class: "chef-card" do %>
-          <h2><%= chef.nickname %></h2>
-          <p> <%= chef.cuisine %></p>
-          <p><%= chef.location %></p>
-          <p><%= chef.description %></p>
-          <div class="chef-card-infos">
-            <h2 class="chef-card-pricing">120£</h2>
-            <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
+    <div class="col-md-8">
+      <div class="row">
+        <% @chefs.each do |chef| %>
+          <div class="col-md-6">
+            <div class="chef-card"> <img src="https://www.w3schools.com/bootstrap/la.jpg" class="img-fluid">
+              <%= link_to chef_path(chef), class: "chef-card" do %>
+                <h2><%= chef.nickname %></h2>
+                <p> <%= chef.cuisine %></p>
+                <p><%= chef.location %></p>
+                <div class="chef-card-infos">
+                  <h2 class="chef-card-pricing">120£</h2>
+                  <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
+                </div>
+              <% end %>
+            </div>
           </div>
         <% end %>
       </div>
-    <% end %>
+    </div>
+    <div class="col-md-4">
+      <!-- TODO: Insert map -->
+    </div>
   </div>
 </div>
