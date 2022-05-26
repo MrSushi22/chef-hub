@@ -1,6 +1,6 @@
 class ChefsController < ApplicationController
   def index
-    @chefs = Chef.all
+    @chefs = Chef.where(cuisine: params[:query])
   end
 
   def new
