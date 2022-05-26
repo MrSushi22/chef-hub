@@ -1,20 +1,17 @@
-.chef-container {
-  display: flex;
-  margin: 1rem;
-}
+
 
 .chef-card {
-  background-color: #eee;
-	border: 1px solid #ccc;
 	border-radius: 5px;
-	margin: 16px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 24px;
 }
 
 .chef-card > img {
-  height: 200px;
+  height: 150px;
   width: 100%;
   object-fit: cover;
 }
+
 
 .chef-card h2 {
   font-size: 16px;
@@ -30,16 +27,14 @@
 
 
 .chef-card .chef-card-infos {
-  padding: 16px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-
+  position: relative;
 }
 
-.chef-card-infos .card-user {
+.chef-card-avatar {
   position: absolute;
   right: 16px;
-  top: -20px;
+  top: -75px;
   width: 40px;
 }
