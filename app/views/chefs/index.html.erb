@@ -1,8 +1,18 @@
 <div class= "container">
+<%= form_tag chefs_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Search a cuisine type"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+<% end %>
   <% @chefs.each do |chef| %>
     <div class="card">
       <%= link_to chef_path(chef), class: "card" do %>
       <h2><%= chef.nickname %></h2>
+      <p> <%= chef.cuisine %></p>
+      <p><%= chef.location %></p>
       <p><%= chef.description %></p>
     <div class="card-infos">
       <h2 class="card-pricing">120£</h2>
