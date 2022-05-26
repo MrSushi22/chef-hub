@@ -35,9 +35,9 @@
         <% if user_signed_in? %>
           <li class="nav-item active">
           <li class="nav-item dropdown">
-            <%= cl_image_tag @article.avatar.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%= cl_image_tag @user.avatar.key, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Contact us", "#", class: "dropdown-item" %>
+              <%= link_to "Contact us", "https://www.youtube.com/watch?v=pKAwXLVxuZQ&ab_channel=Rodritoledo94", class: "dropdown-item" %>
               <%= link_to "Become a chef", new_chef_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
