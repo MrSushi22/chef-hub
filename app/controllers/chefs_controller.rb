@@ -1,8 +1,10 @@
 class ChefsController < ApplicationController
   def index
     if params[:query].present?
-      @chefs = Chef.where(cuisine: params[:query])
-      # @chefs.Chef.zwhere("nickname ILIKE ?", "#{params[:query]}")
+      # @chefs = Chef.where(cuisine: params[:query])
+      sql_query = "cuisine ILIKE :query OR location ILIKE :query OR nickname ILIKE :query"
+      @chefs = Chef.where(sql_query, query: "%#{params[:query]}%")
+
     else
       @chefs = Chef.all
     end
