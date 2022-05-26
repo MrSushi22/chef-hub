@@ -1,8 +1,17 @@
+.container {
+  display: flex;
+  margin: 1rem;
+}
+
+.col {
+  display: flex;
+}
+
 .card {
-  display:inline-block;
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-color: #eee;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 16px;
 }
 
 .card > img {
