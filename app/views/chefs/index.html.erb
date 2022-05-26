@@ -1,24 +1,29 @@
 <div class= "container">
-<%= form_tag chefs_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Search a cuisine type"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-  <% @chefs.each do |chef| %>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+          <%= form_tag chefs_path, method: :get do %>
+          <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Search a cuisine type"
+            %>
+          <%= submit_tag "Search", class: "btn btn-primary" %>
+          <% end %>
+
+          <% @chefs.each do |chef| %>
     <div class="card">
-      <%= link_to chef_path(chef), class: "card" do %>
-      <h2><%= chef.nickname %></h2>
-      <p> <%= chef.cuisine %></p>
-      <p><%= chef.location %></p>
-      <p><%= chef.description %></p>
+            <%= link_to chef_path(chef), class: "card" do %>
+            <h2><%= chef.nickname %></h2>
+            <p> <%= chef.cuisine %></p>
+            <p><%= chef.location %></p>
+            <p><%= chef.description %></p>
     <div class="card-infos">
-      <h2 class="card-pricing">120£</h2>
-      <img height="40" width="40" class="card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
+            <h2 class="card-pricing">120£</h2>
+            <img height="40" width="40" class="card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
     </div>
-    <% end %>
+          <% end %>
+    </div>
+          <% end %>
+    </div>
   </div>
-  <% end %>
 </div>
