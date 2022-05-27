@@ -1,43 +1,29 @@
-
 <div class="banner_profile"></div>
 
-   <div class="container">
+ <div class="container">
       <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
-   </div>
-
+  </div>
 
 <div class="container" id="content-profile">
     <div class="row">
-         <div class="col-12 col-lg-8">
+         <div class="col-4">
            <div>
-             <h1>Someone name here</h1>
-                <p>someone city</p>
+             <h1><%= @chef.nickname %></h1>
+                <p> &#127759; <%= @chef.location %></p>
            </div>
         </div>
 </div>
-      <div>
-        <p>someone description here</p>
-      </div>
-
-         <div class="col-12 col-lg-4">
-           <div>
-                <h5 class="mb-3">Book this chef</h5>
-                <h6 class="mb-3"><strong>Price 140.0 €/hour</strong></h6>
-           </div>
-        </div>
-
-
-<div class="btn btn-primary">
-  <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn" %>
-
-<div class="banner" >
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-sm-8">
-                <h1>Book here!</h1>
+    <div>
+      <p><%= @chef.description %></p>
+    </div>
+</div>
+    <div class="book-container">
+        <div class="wrapper">
+            <div class="col-4">
+                <h3>Book here!</h3>
                 <p>Change your life, learn to have people cook for you.</p>
-                <div class="btn btn-primary">
-                <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn" %>
+                <div class="btn btn-dark btn-rounded">
+                <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn btn-dark btn-rounded" %>
               </div>
           </div>
       </div>
