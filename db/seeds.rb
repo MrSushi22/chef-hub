@@ -8,3 +8,6 @@
 
 User.delete_all
 Chef.delete_all
+
+puts "#{User.count} in existence"
+puts "#{Chef.count} in existence"
