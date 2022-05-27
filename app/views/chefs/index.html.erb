@@ -11,10 +11,23 @@
   <div class="row">
     <div class="col-md-8">
       <div class="row">
+      <%
+        images = [
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666435/cooking/cooking_image_8_faagwq.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666432/cooking/cooking_image_6_qzdeoz.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666426/cooking/cooking_image_4_nqnrw3.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666427/cooking/cooking_image_5_ndeyoq.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666425/cooking/cooking_image_3_qotj5i.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666424/cooking/cooking_image_2_iiaorq.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666422/cooking/cooking_image_1_bnfhlp.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666437/cooking/cooking_image_9_cqtarz.jpg",
+          "https://res.cloudinary.com/didajvmh1/image/upload/v1653666433/cooking/cooking_image_7_ajqfmb.jpg"
+        ]
+      %>
         <% @chefs.each do |chef| %>
           <div class="col-md-6">
             <div class="chef-card">
-              <img src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2020/06/iStock-941436310-1200x675.jpg" class="img-fluid">
+              <img src="<%= images.sample %>" class="img-fluid">
               <div class="card-details p-3">
               <%# <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://cdn.quotesgram.com/img/80/90/1219079853-gordon-ramsey.jpg"> %>
               <% if chef.photo.key.present? %>
