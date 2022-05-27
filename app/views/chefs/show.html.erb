@@ -1,31 +1,25 @@
 <div class="banner_profile"></div>
 
- <div class="container">
-      <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
-  </div>
+<div class="container">
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
+</div>
 
 <div class="container" id="content-profile">
-    <div class="row">
-         <div class="col-4">
-           <div>
-             <h1><%= @chef.nickname %></h1>
-                <p> &#127759; <%= @chef.location %></p>
-           </div>
-        </div>
-</div>
-    <div>
+  <div class="row">
+    <div class="mt-3 col-8">
+      <h1><%= @chef.nickname %></h1>
+      <p> &#127759; <%= @chef.location %></p>
       <p><%= @chef.description %></p>
     </div>
-</div>
-    <div class="book-container">
-        <div class="wrapper">
-            <div class="col-4">
-                <h3>Book here!</h3>
-                <p>Change your life, learn to have people cook for you.</p>
-                <div class="btn btn-dark btn-rounded">
-                <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn btn-dark btn-rounded" %>
-              </div>
-          </div>
+    <div class="col-4">
+      <h3 class="mt-3">Book this chef! 👨‍🍳 </h3>
+      <p>Change your life, learn to have people cook for you.</p>
+      <div class="btn btn-dark btn-rounded">
+        <%=link_to "Book", new_chef_booking_path(@chef), :class => "btn btn-dark btn-rounded" %>
+      </div>
+      <div class="btn btn-dark btn-rounded">
+        <%=link_to "Back to chefs", chefs_path, :class => "btn btn-dark btn-rounded" %>
       </div>
     </div>
+  </div>
 </div>
