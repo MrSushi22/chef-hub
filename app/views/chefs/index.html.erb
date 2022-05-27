@@ -13,14 +13,17 @@
       <div class="row">
         <% @chefs.each do |chef| %>
           <div class="col-md-6">
-            <div class="chef-card"> <img src="https://www.w3schools.com/bootstrap/la.jpg" class="img-fluid">
-              <%= link_to chef_path(chef) do %>
-                <h2 class="card-title"><%= chef.nickname %></h2>
-                <p><%= chef.cuisine %></p>
-                <p><%= chef.location %></p>
-                  <h3 class="card-pricing">120£</h3>
-                  <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://image.shutterstock.com/image-vector/chef-avatar-character-icon-260nw-690067834.jpg">
-              <% end %>
+            <div class="chef-card">
+              <img src="https://www.w3schools.com/bootstrap/la.jpg" class="img-fluid">
+              <div class="card-details p-3">
+              <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://cdn.quotesgram.com/img/80/90/1219079853-gordon-ramsey.jpg">
+                <%= link_to chef_path(chef) do %>
+                  <h2 class="card-title"><%= chef.nickname %></h2>
+                  <p><%= chef.cuisine %></p>
+                  <p><%= chef.location %></p>
+                    <h3 class="card-pricing">120£</h3>
+                <% end %>
+              </div>
             </div>
           </div>
         <% end %>

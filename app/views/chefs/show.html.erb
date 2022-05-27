@@ -1,8 +1,8 @@
 <div class="banner_profile"></div>
 
-<div class="container">
-  <%= image_tag "https://kitt.lewagon.com/placeholder/users/arthur-littm", class: "avatar-large", alt: "avatar-large" %>
-</div>
+ <div class="container">
+<%= cl_image_tag @chef.photo.key, class: "avatar-large", alt: "avatar-large", crop: :fill %>  </div>
+
 
 <div class="container" id="content-profile">
   <div class="row">
