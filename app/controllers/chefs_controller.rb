@@ -16,7 +16,6 @@ class ChefsController < ApplicationController
         lng: chef.longitude
       }
     end
-    end
   end
 
   def new
@@ -41,8 +40,9 @@ class ChefsController < ApplicationController
   def destroy
   end
 
-private
+  private
 
-def chef_params
-  params.require(:chef).permit(:nickname, :location, :price, :description, :cuisine, :photo)
+  def chef_params
+    params.require(:chef).permit(:nickname, :location, :price, :description, :cuisine, :photo)
+  end
 end
