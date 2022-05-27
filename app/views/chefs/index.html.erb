@@ -16,7 +16,10 @@
             <div class="chef-card">
               <img src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2020/06/iStock-941436310-1200x675.jpg" class="img-fluid">
               <div class="card-details p-3">
-              <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://cdn.quotesgram.com/img/80/90/1219079853-gordon-ramsey.jpg">
+              <%# <img height="40" width="40" class="chef-card-avatar avatar-bordered" src="https://cdn.quotesgram.com/img/80/90/1219079853-gordon-ramsey.jpg"> %>
+              <% if chef.photo.key.present? %>
+                <%= cl_image_tag chef.photo.key, class: "chef-card-avatar avatar-bordered", height: 40, width: 40, crop: :fill %>
+              <% end %>
                 <%= link_to chef_path(chef) do %>
                   <h2 class="card-title"><%= chef.nickname %></h2>
                   <p><%= chef.cuisine %></p>
