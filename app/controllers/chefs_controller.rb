@@ -23,8 +23,13 @@ class ChefsController < ApplicationController
   end
 
   def create
-    @chef = Chef.new
-    @chef.save
+    @chef = Chef.new(chef_params)
+    @chef.user = current_user
+    if @chef.save
+    redirect_to '/'
+    else
+      render :new
+    end
   end
 
   def show
