@@ -27,7 +27,12 @@
       </div>
     </div>
     <div class="col-md-4">
-      <!-- TODO: Insert map -->
+      <!-- MAP -->
+      <div style="width: 100%; height: 600px;"
+        data-controller="mapbox"
+        data-mapbox-markers-value="<%= @markers.to_json %>"
+        data-mapbox-api-key-value="<%= ENV['MAP_BOX_API_KEY'] %>">
+      </div>
     </div>
   </div>
 </div>
